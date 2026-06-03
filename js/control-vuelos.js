@@ -32,7 +32,7 @@
 //  mantener una lista de registros, cada uno con múltiples propiedades.
 // ─────────────────────────────────────────────────────────────────────────────
 let contadorID = 0;
-const lanzamientos = [];
+let lanzamientos = [];
 let filtroActivo = "todos";
 let idEnEdicion = null;
 
@@ -145,6 +145,7 @@ const crearTarjeta = (lanzamiento) => {
   body.appendChild(tipo);
   body.appendChild(objetivo);
   body.appendChild(fecha);
+  
 
   // Footer de la tarjeta
   const footer = document.createElement('div');
